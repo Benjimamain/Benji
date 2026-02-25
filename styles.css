@@ -1,0 +1,140 @@
+:root {
+  --bg: #0a0b12;
+  --panel: #14162b;
+  --text: #f8f9ff;
+  --muted: #b7bbd9;
+  --accent: #8e7dff;
+  --accent-2: #31d4ff;
+  --success: #5effa1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 20% 20%, #1d2155 0%, var(--bg) 45%);
+  line-height: 1.5;
+}
+
+.hero {
+  min-height: 70vh;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.nav-btn {
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid #3f4383;
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+}
+
+.hero-content {
+  max-width: 720px;
+  margin-top: 4.5rem;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(142, 125, 255, 0.18);
+  color: var(--accent-2);
+  border: 1px solid rgba(49, 212, 255, 0.4);
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  margin: 0.8rem 0 1rem;
+  line-height: 1.1;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 1.4rem;
+}
+
+button,
+.secondary {
+  border: 0;
+  border-radius: 12px;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+}
+
+button {
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  color: #fff;
+  cursor: pointer;
+}
+
+.secondary {
+  text-decoration: none;
+  background: #232647;
+  color: var(--text);
+}
+
+#feedback {
+  color: var(--success);
+  min-height: 1.5rem;
+  margin-top: 0.9rem;
+}
+
+.section {
+  padding: 2.5rem 1.25rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid #242852;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.card p {
+  color: var(--muted);
+}
+
+.highlight {
+  background: #111328;
+  border-top: 1px solid #272b5a;
+  border-bottom: 1px solid #272b5a;
+}
+
+.result {
+  min-height: 1.5rem;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 1.5rem;
+}
