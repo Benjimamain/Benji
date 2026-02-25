@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steal a Brainrot - Jeu Vidéo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="top-nav">
+        <span class="brand">Steal a Brainrot</span>
+        <a href="#play" class="nav-btn">Jouer</a>
+      </nav>
+
+      <div class="hero-content">
+        <p class="tag">Nouveau jeu compétitif</p>
+        <h1>Vole le Brainrot. Fuis. Gagne.</h1>
+        <p>
+          Un jeu d’action multijoueur absurde où chaque seconde compte : infiltre,
+          récupère le Brainrot et échappe-toi avant les autres.
+        </p>
+        <div class="hero-actions">
+          <button id="wishlistBtn">Ajouter à la wishlist</button>
+          <a href="#features" class="secondary">Voir les fonctionnalités</a>
+        </div>
+        <p id="feedback" aria-live="polite"></p>
+      </div>
+    </header>
+
+    <main>
+      <section id="features" class="section">
+        <h2>Pourquoi Steal a Brainrot ?</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Gameplay nerveux</h3>
+            <p>Rounds courts, décisions rapides et retournements constants.</p>
+          </article>
+          <article class="card">
+            <h3>Maps délirantes</h3>
+            <p>Du lycée maudit au supermarché cosmique, rien n’a de sens.</p>
+          </article>
+          <article class="card">
+            <h3>Progression fun</h3>
+            <p>Débloque skins, gadgets et emotes pour flex en partie.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="play" class="section highlight">
+        <h2>Mini simulateur</h2>
+        <p>
+          Clique pour tenter un vol de Brainrot. Ton niveau de style dépend du hasard.
+        </p>
+        <button id="stealBtn">Tenter le vol</button>
+        <p id="result" class="result"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Steal a Brainrot Studio - Tout est fictif, sauf le chaos.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
